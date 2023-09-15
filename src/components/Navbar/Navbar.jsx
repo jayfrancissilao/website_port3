@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import Logo from "/src/assets/NavbarLogo/logo.png";
 // import App.css
 import "/src/App.css";
-
+// import menuicon from react icons
+import { HiMenu } from "react-icons/hi";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -70,7 +71,45 @@ const Navbar = () => {
             <button className="outLineBtn">Contact Me</button>
           </div>
           {/* menu btn for small devices */}
+          <button onClick={toogleMenu} className="lg:hidden text-body text-3xl">
+            <HiMenu />
+          </button>
         </div>
+        {/* menu items for small devices */}
+        {isMenuOpen && (
+          <div className="mt-4 bg-body rounded-lg text-white">
+            <a
+              href="/"
+              className="block py-2 px-4 cursor-pointer text-primary hover:text-gray-400 "
+            >
+              Home
+            </a>
+            <a
+              href="/"
+              className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
+            >
+              Skills
+            </a>
+            <a
+              href="/"
+              className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
+            >
+              About Me
+            </a>
+            <a
+              href="/"
+              className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
+            >
+              Portfolio
+            </a>
+            <a
+              href="/"
+              className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
+            >
+              Testimonials
+            </a>
+          </div>
+        )}
       </nav>
     </header>
   );
