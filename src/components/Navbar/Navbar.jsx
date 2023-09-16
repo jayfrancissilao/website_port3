@@ -25,8 +25,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header>
-      <nav className="py-4 md:px-12 px-4 bg-white">
+    <header className="w-full fixed top-0 left-0 right-0">
+      <nav
+        className={`py-4 md:px-12 px-4 bg-white ${
+          isSticky ? "sticky top-0 left-0 right-0 bg-white" : ""
+        }`}
+      >
         {/* for large device */}
         <div className="flex items-center justify-between ">
           {/* for logo */}
@@ -77,7 +81,7 @@ const Navbar = () => {
         </div>
         {/* menu items for small devices */}
         {isMenuOpen && (
-          <div className="mt-4 bg-body rounded-lg text-white">
+          <div className="mt-4 p-4 bg-body rounded-lg text-white">
             <a
               href="/"
               className="block py-2 px-4 cursor-pointer text-primary hover:text-gray-400 "
