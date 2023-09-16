@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="lg:flex items-center gap-3 hidden text-body text-lg">
             <a
               href="/"
-              className="block py-2 px-4 cursor-pointer text-body hover:text-gray-400 "
+              className="block py-2 px-4 cursor-pointer text-primary hover:text-gray-400 "
             >
               Home
             </a>
