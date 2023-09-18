@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Strategy & direction",
+    "description": "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    "id": 2,
+    "name": "Design Matter",
+    "description": "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    "id": 3,
+    "name": "React Development",
+    "description": "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    "id": 4,
+    "name": "Tailwind Css",
+    "description": "lorem ipsum dolor sit amet, consectetur"
+  }
+]
