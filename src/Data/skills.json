@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Strategy & direction",
+    "name": "Figma",
     "description": "lorem ipsum dolor sit amet, consectetur"
   },
   {
     "id": 2,
-    "name": "Design Matter",
+    "name": "Javascript",
     "description": "lorem ipsum dolor sit amet, consectetur"
   },
   {
@@ -16,6 +16,11 @@
   },
   {
     "id": 4,
+    "name": "Photoshop",
+    "description": "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    "id": 5,
     "name": "Tailwind Css",
     "description": "lorem ipsum dolor sit amet, consectetur"
   }
