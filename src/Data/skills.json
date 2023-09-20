@@ -11,17 +11,32 @@
   },
   {
     "id": 3,
-    "name": "React Development",
+    "name": "React Js",
     "description": "lorem ipsum dolor sit amet, consectetur"
   },
   {
     "id": 4,
-    "name": "Photoshop",
+    "name": "Tailwind Css",
     "description": "lorem ipsum dolor sit amet, consectetur"
   },
   {
     "id": 5,
-    "name": "Tailwind Css",
+    "name": "Photoshop",
+    "description": "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    "id": 6,
+    "name": "Adobe Pr",
+    "description": "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    "id": 7,
+    "name": "Git",
+    "description": "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    "id": 8,
+    "name": "Github",
     "description": "lorem ipsum dolor sit amet, consectetur"
   }
 ]

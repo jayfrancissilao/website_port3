@@ -4,10 +4,23 @@ import Javascript from "/src/assets/SkillsPicture/javascript.png";
 import ReactJs from "/src/assets/SkillsPicture/react.png";
 import Photoshop from "/src/assets/SkillsPicture/photoshop.png";
 import Tailwind from "/src/assets/SkillsPicture/tailwind.png";
+import AdobePr from "/src/assets/SkillsPicture/adobePro.png";
+import Git from "/src/assets/SkillsPicture/git.png";
+import Github from "/src/assets/SkillsPicture/github.png";
+import "/src/App.css";
 
 const Skills = () => {
   // for displaying the image
-  const images = [Figma, Javascript, ReactJs, Photoshop, Tailwind];
+  const images = [
+    Figma,
+    Javascript,
+    ReactJs,
+    Tailwind,
+    Photoshop,
+    AdobePr,
+    Git,
+    Github,
+  ];
   return (
     <div className="lg:mx-12 mx-4 py-32">
       {/* skills header */}
@@ -21,12 +34,12 @@ const Skills = () => {
           return (
             <div
               key={tech.id}
-              className="bg-bgShade  p-8 rounded-lg cursor-pointer  hover:-translate-y-4 transition-all duration-300"
+              className="bg-bgShade  p-8 rounded-lg cursor-pointer  hover:-translate-y-4 transition-all duration-300 border-bottom-css"
             >
               <img
                 src={images[i]}
                 alt=""
-                className="w-14 h-14 bg-white rounded-lg shadow-md mb-7 p-3"
+                className="w-14 h-14 bg-white rounded-lg shadow-md mb-7 p-3 "
               />
               <h3 className="text-2xl font-bold mb-4">{tech.name}</h3>
               <p>{tech.description}</p>
