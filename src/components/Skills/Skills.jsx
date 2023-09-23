@@ -22,7 +22,7 @@ const Skills = () => {
     Github,
   ];
   return (
-    <div className="lg:mx-12 mx-4 py-32">
+    <div className="lg:mx-12 mx-4 py-32" id="skills">
       {/* skills header */}
       <div className="text-headingColor mb-20">
         <p className="text-xl font-semibold mb-5">My Skills</p>

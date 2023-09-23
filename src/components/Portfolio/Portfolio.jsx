@@ -7,7 +7,7 @@ const Portfolio = () => {
   // for Projects Images
   const images = [Project1, Project2, Project3];
   return (
-    <div className="lg:mx-12 mx-4 my-32">
+    <div className="lg:mx-12 mx-4 my-32" id="portfolio">
       {/* Portfolio left side */}
       <div className="flex flex-col md:flex-row justify-between mb-20 gap-8 md:items-center">
         <div className="text-headingColor">

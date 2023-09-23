@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+// import react scroll for clicking the link
+import { Link } from "react-scroll";
 //   import logo here
 import Logo from "/src/assets/NavbarLogo/logo.png";
 // import App.css
@@ -39,36 +41,56 @@ const Navbar = () => {
           </div>
           {/* menu items for large devices */}
           <div className="lg:flex items-center gap-3 hidden text-body text-lg">
-            <a
-              href="/"
+            <Link
+              to="home"
+              spy={true}
+              activeClass="active"
+              smooth={true}
+              offset={-100}
               className="block py-2 px-4 cursor-pointer text-primary hover:text-gray-400 "
             >
               Home
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+              to="skills"
+              spy={true}
+              offset={-100}
+              activeClass="active"
+              smooth={true}
               className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
             >
               Skills
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+              to="about"
+              spy={true}
+              offset={-100}
+              activeClass="active"
+              smooth={true}
               className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
             >
               About Me
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+              to="portfolio"
+              spy={true}
+              offset={-100}
+              activeClass="active"
+              smooth={true}
               className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
             >
               Portfolio
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+              to="testimonials"
+              spy={true}
+              offset={-100}
+              activeClass="active"
+              smooth={true}
               className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
             >
               Testimonials
-            </a>
+            </Link>
           </div>
           {/* contact btn */}
           <div className="lg:block hidden">
@@ -83,31 +105,31 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="mt-4 p-4 bg-body rounded-lg text-white">
             <a
-              href="/"
+              href="/home"
               className="block py-2 px-4 cursor-pointer text-primary hover:text-gray-400 "
             >
               Home
             </a>
             <a
-              href="/"
+              href="/skills"
               className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
             >
               Skills
             </a>
             <a
-              href="/"
+              href="/about"
               className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
             >
               About Me
             </a>
             <a
-              href="/"
+              href="/portfolio"
               className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
             >
               Portfolio
             </a>
             <a
-              href="/"
+              href="/testimonials"
               className="block py-2 px-4 cursor-pointer  hover:text-gray-400 "
             >
               Testimonials

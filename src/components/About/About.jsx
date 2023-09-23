@@ -1,7 +1,7 @@
 import AboutProfile from "/src/assets/AboutPicture/profile_latest.png";
 const About = () => {
   return (
-    <div className="lg:mx-12 mx-4">
+    <div className="lg:mx-12 mx-4" id="about">
       <div className="flex flex-col sm:flex-row md:gap-24 gap-12 items-center justify-between py-10">
         {/* image here */}
         <div className="sm:w-1/2">
