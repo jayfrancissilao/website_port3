@@ -19,7 +19,7 @@ const Navbar = () => {
   //   function for making navbar sticky
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 100) {
         setIsSticky(true);
       }
     };

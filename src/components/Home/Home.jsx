@@ -1,4 +1,5 @@
 import HomePicture from "/src/assets/HomePicture/homeynobg.png";
+
 const Home = () => {
   return (
     <div className="mt-19 bg-bgShade " id="home">

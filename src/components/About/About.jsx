@@ -1,7 +1,17 @@
 import AboutProfile from "/src/assets/AboutPicture/profile_latest.png";
+// framer motion
+import { motion } from "framer-motion";
+import { fadeIn } from "/src/variants";
 const About = () => {
   return (
-    <div className="lg:mx-12 mx-4" id="about">
+    <motion.div
+      variants={fadeIn("right", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      className="lg:mx-12 mx-4"
+      id="about"
+    >
       <div className="flex flex-col sm:flex-row md:gap-24 gap-12 items-center justify-between py-10">
         {/* image here */}
         <div className="sm:w-1/2">
@@ -20,7 +30,7 @@ const About = () => {
           <button className="btn-primary">Contact Me</button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

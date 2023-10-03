@@ -9,6 +9,10 @@ import Git from "/src/assets/SkillsPicture/git.png";
 import Github from "/src/assets/SkillsPicture/github.png";
 import "/src/App.css";
 
+// framer motion
+import { motion } from "framer-motion";
+import { fadeIn } from "/src/variants";
+
 const Skills = () => {
   // for displaying the image
   const images = [
@@ -32,7 +36,11 @@ const Skills = () => {
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
         {DataSkills.map((tech, i) => {
           return (
-            <div
+            <motion.div
+              variants={fadeIn("left", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
               key={tech.id}
               className="bg-bgShade  p-8 rounded-lg cursor-pointer  hover:-translate-y-4 transition-all duration-300 border-bottom-css"
             >
@@ -43,7 +51,7 @@ const Skills = () => {
               />
               <h3 className="text-2xl font-bold mb-4">{tech.name}</h3>
               <p>{tech.description}</p>
-            </div>
+            </motion.div>
           );
         })}
       </div>
